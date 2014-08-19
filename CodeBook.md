@@ -68,9 +68,9 @@ out to "Time.Domain" and "Frequency.Domain" respectively.
 
 ## Variable list with definitions
 * subject \[integer\]:
-  ..* The test subject (a person) number.
-  ..* It has values in the range 1-30.
+  * The test subject (a person) number.
+  * It has values in the range 1-30.
 * activity \[Factor with 6 levels\]:
-  --* The six possible activities the test subject could be doing while the data was being sampled.
-  --* The six possible values are: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
+  * The six possible activities the test subject could be doing while the data was being sampled.
+  * The six possible values are: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
 
