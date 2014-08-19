@@ -8,7 +8,7 @@ The following files are available for you, the grader, in my github repo:
 * run_analysis.R
 
 
-## Readme.md
+## README.md
 This README.md file is the top-level reference for this project.
 
 
