@@ -96,11 +96,11 @@ writeVariablesFile <- function(baseDir, fileName, features, features.orig) {
     }
     features.w.spaces <- tolower(gsub("[.]+", " ", features))
 
-    lines <- paste("* ", features, " \\[numeric\\]:\n  ..* The mean of the ", features.w.spaces, sep="")
-    lines <- paste(lines, " measurement\n", sep="")
-    lines <- paste(lines, "  ..* This value was derived by taking", sep="")
+    lines <- paste("* ", features, " \\[numeric\\]:\n  * The mean of the ", features.w.spaces, sep="")
+    lines <- paste(lines, " measurement\n  *", sep="")
+    lines <- paste(lines, " This value was derived by taking", sep="")
     lines <- paste(lines, " the mean of \"", features.orig, sep="")
-    lines <- paste(lines, "\" for each combination\n     of test", sep="")
+    lines <- paste(lines, "\" for each combination of test", sep="")
     lines <- paste(lines, " subject and activity type", sep="")
     
     fileConn <- file(variablesFile)
@@ -300,7 +300,7 @@ run <- function(dataDir, reportFile) {
 
 
 # Set baseDir as the current working directory
-# baseDir <- "C:/Users/jfelchli/Documents/Coursera/Data Science/Getting and Cleaning Data/GACD-Project"; setwd(baseDir)
+# baseDir <- "C:/Users/jfelchli/Documents/Coursera/Data Science/Getting and Cleaning Data/Coursera-GACD"; setwd(baseDir)
 baseDir <- getwd()
 
 # Create directory, download, and unzip data

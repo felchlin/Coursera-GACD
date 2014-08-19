@@ -73,4 +73,201 @@ out to "Time.Domain" and "Frequency.Domain" respectively.
 * activity \[Factor with 6 levels\]:
   * The six possible activities the test subject could be doing while the data was being sampled.
   * The six possible values are: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
-
+* Time.Domain.Body.Accelerometer.Mean.X.axis \[numeric\]:
+  * The mean of the time domain body accelerometer mean x axis measurement
+  * This value was derived by taking the mean of "tBodyAcc-mean()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Mean.Y.axis \[numeric\]:
+  * The mean of the time domain body accelerometer mean y axis measurement
+  * This value was derived by taking the mean of "tBodyAcc-mean()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Mean.Z.axis \[numeric\]:
+  * The mean of the time domain body accelerometer mean z axis measurement
+  * This value was derived by taking the mean of "tBodyAcc-mean()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the time domain body accelerometer standard deviation x axis measurement
+  * This value was derived by taking the mean of "tBodyAcc-std()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the time domain body accelerometer standard deviation y axis measurement
+  * This value was derived by taking the mean of "tBodyAcc-std()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the time domain body accelerometer standard deviation z axis measurement
+  * This value was derived by taking the mean of "tBodyAcc-std()-Z" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Mean.X.axis \[numeric\]:
+  * The mean of the time domain gravity accelerometer mean x axis measurement
+  * This value was derived by taking the mean of "tGravityAcc-mean()-X" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Mean.Y.axis \[numeric\]:
+  * The mean of the time domain gravity accelerometer mean y axis measurement
+  * This value was derived by taking the mean of "tGravityAcc-mean()-Y" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Mean.Z.axis \[numeric\]:
+  * The mean of the time domain gravity accelerometer mean z axis measurement
+  * This value was derived by taking the mean of "tGravityAcc-mean()-Z" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the time domain gravity accelerometer standard deviation x axis measurement
+  * This value was derived by taking the mean of "tGravityAcc-std()-X" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the time domain gravity accelerometer standard deviation y axis measurement
+  * This value was derived by taking the mean of "tGravityAcc-std()-Y" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the time domain gravity accelerometer standard deviation z axis measurement
+  * This value was derived by taking the mean of "tGravityAcc-std()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Mean.X.axis \[numeric\]:
+  * The mean of the time domain body accelerometer jerk mean x axis measurement
+  * This value was derived by taking the mean of "tBodyAccJerk-mean()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Mean.Y.axis \[numeric\]:
+  * The mean of the time domain body accelerometer jerk mean y axis measurement
+  * This value was derived by taking the mean of "tBodyAccJerk-mean()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Mean.Z.axis \[numeric\]:
+  * The mean of the time domain body accelerometer jerk mean z axis measurement
+  * This value was derived by taking the mean of "tBodyAccJerk-mean()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the time domain body accelerometer jerk standard deviation x axis measurement
+  * This value was derived by taking the mean of "tBodyAccJerk-std()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the time domain body accelerometer jerk standard deviation y axis measurement
+  * This value was derived by taking the mean of "tBodyAccJerk-std()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the time domain body accelerometer jerk standard deviation z axis measurement
+  * This value was derived by taking the mean of "tBodyAccJerk-std()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Mean.X.axis \[numeric\]:
+  * The mean of the time domain body gyroscope mean x axis measurement
+  * This value was derived by taking the mean of "tBodyGyro-mean()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Mean.Y.axis \[numeric\]:
+  * The mean of the time domain body gyroscope mean y axis measurement
+  * This value was derived by taking the mean of "tBodyGyro-mean()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Mean.Z.axis \[numeric\]:
+  * The mean of the time domain body gyroscope mean z axis measurement
+  * This value was derived by taking the mean of "tBodyGyro-mean()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the time domain body gyroscope standard deviation x axis measurement
+  * This value was derived by taking the mean of "tBodyGyro-std()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the time domain body gyroscope standard deviation y axis measurement
+  * This value was derived by taking the mean of "tBodyGyro-std()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the time domain body gyroscope standard deviation z axis measurement
+  * This value was derived by taking the mean of "tBodyGyro-std()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Mean.X.axis \[numeric\]:
+  * The mean of the time domain body gyroscope jerk mean x axis measurement
+  * This value was derived by taking the mean of "tBodyGyroJerk-mean()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Mean.Y.axis \[numeric\]:
+  * The mean of the time domain body gyroscope jerk mean y axis measurement
+  * This value was derived by taking the mean of "tBodyGyroJerk-mean()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Mean.Z.axis \[numeric\]:
+  * The mean of the time domain body gyroscope jerk mean z axis measurement
+  * This value was derived by taking the mean of "tBodyGyroJerk-mean()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the time domain body gyroscope jerk standard deviation x axis measurement
+  * This value was derived by taking the mean of "tBodyGyroJerk-std()-X" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the time domain body gyroscope jerk standard deviation y axis measurement
+  * This value was derived by taking the mean of "tBodyGyroJerk-std()-Y" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the time domain body gyroscope jerk standard deviation z axis measurement
+  * This value was derived by taking the mean of "tBodyGyroJerk-std()-Z" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Magnitude.Mean \[numeric\]:
+  * The mean of the time domain body accelerometer magnitude mean measurement
+  * This value was derived by taking the mean of "tBodyAccMag-mean()" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the time domain body accelerometer magnitude standard deviation measurement
+  * This value was derived by taking the mean of "tBodyAccMag-std()" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Magnitude.Mean \[numeric\]:
+  * The mean of the time domain gravity accelerometer magnitude mean measurement
+  * This value was derived by taking the mean of "tGravityAccMag-mean()" for each combination of test subject and activity type
+* Time.Domain.Gravity.Accelerometer.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the time domain gravity accelerometer magnitude standard deviation measurement
+  * This value was derived by taking the mean of "tGravityAccMag-std()" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Magnitude.Mean \[numeric\]:
+  * The mean of the time domain body accelerometer jerk magnitude mean measurement
+  * This value was derived by taking the mean of "tBodyAccJerkMag-mean()" for each combination of test subject and activity type
+* Time.Domain.Body.Accelerometer.Jerk.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the time domain body accelerometer jerk magnitude standard deviation measurement
+  * This value was derived by taking the mean of "tBodyAccJerkMag-std()" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Magnitude.Mean \[numeric\]:
+  * The mean of the time domain body gyroscope magnitude mean measurement
+  * This value was derived by taking the mean of "tBodyGyroMag-mean()" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the time domain body gyroscope magnitude standard deviation measurement
+  * This value was derived by taking the mean of "tBodyGyroMag-std()" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Magnitude.Mean \[numeric\]:
+  * The mean of the time domain body gyroscope jerk magnitude mean measurement
+  * This value was derived by taking the mean of "tBodyGyroJerkMag-mean()" for each combination of test subject and activity type
+* Time.Domain.Body.Gyroscope.Jerk.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the time domain body gyroscope jerk magnitude standard deviation measurement
+  * This value was derived by taking the mean of "tBodyGyroJerkMag-std()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Mean.X.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer mean x axis measurement
+  * This value was derived by taking the mean of "fBodyAcc-mean()-X" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Mean.Y.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer mean y axis measurement
+  * This value was derived by taking the mean of "fBodyAcc-mean()-Y" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Mean.Z.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer mean z axis measurement
+  * This value was derived by taking the mean of "fBodyAcc-mean()-Z" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer standard deviation x axis measurement
+  * This value was derived by taking the mean of "fBodyAcc-std()-X" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer standard deviation y axis measurement
+  * This value was derived by taking the mean of "fBodyAcc-std()-Y" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer standard deviation z axis measurement
+  * This value was derived by taking the mean of "fBodyAcc-std()-Z" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Mean.X.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk mean x axis measurement
+  * This value was derived by taking the mean of "fBodyAccJerk-mean()-X" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Mean.Y.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk mean y axis measurement
+  * This value was derived by taking the mean of "fBodyAccJerk-mean()-Y" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Mean.Z.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk mean z axis measurement
+  * This value was derived by taking the mean of "fBodyAccJerk-mean()-Z" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk standard deviation x axis measurement
+  * This value was derived by taking the mean of "fBodyAccJerk-std()-X" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk standard deviation y axis measurement
+  * This value was derived by taking the mean of "fBodyAccJerk-std()-Y" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk standard deviation z axis measurement
+  * This value was derived by taking the mean of "fBodyAccJerk-std()-Z" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Mean.X.axis \[numeric\]:
+  * The mean of the frequency domain body gyroscope mean x axis measurement
+  * This value was derived by taking the mean of "fBodyGyro-mean()-X" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Mean.Y.axis \[numeric\]:
+  * The mean of the frequency domain body gyroscope mean y axis measurement
+  * This value was derived by taking the mean of "fBodyGyro-mean()-Y" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Mean.Z.axis \[numeric\]:
+  * The mean of the frequency domain body gyroscope mean z axis measurement
+  * This value was derived by taking the mean of "fBodyGyro-mean()-Z" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Standard.Deviation.X.axis \[numeric\]:
+  * The mean of the frequency domain body gyroscope standard deviation x axis measurement
+  * This value was derived by taking the mean of "fBodyGyro-std()-X" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Standard.Deviation.Y.axis \[numeric\]:
+  * The mean of the frequency domain body gyroscope standard deviation y axis measurement
+  * This value was derived by taking the mean of "fBodyGyro-std()-Y" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Standard.Deviation.Z.axis \[numeric\]:
+  * The mean of the frequency domain body gyroscope standard deviation z axis measurement
+  * This value was derived by taking the mean of "fBodyGyro-std()-Z" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Magnitude.Mean \[numeric\]:
+  * The mean of the frequency domain body accelerometer magnitude mean measurement
+  * This value was derived by taking the mean of "fBodyAccMag-mean()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the frequency domain body accelerometer magnitude standard deviation measurement
+  * This value was derived by taking the mean of "fBodyAccMag-std()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Magnitude.Mean \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk magnitude mean measurement
+  * This value was derived by taking the mean of "fBodyBodyAccJerkMag-mean()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Accelerometer.Jerk.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the frequency domain body accelerometer jerk magnitude standard deviation measurement
+  * This value was derived by taking the mean of "fBodyBodyAccJerkMag-std()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Magnitude.Mean \[numeric\]:
+  * The mean of the frequency domain body gyroscope magnitude mean measurement
+  * This value was derived by taking the mean of "fBodyBodyGyroMag-mean()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the frequency domain body gyroscope magnitude standard deviation measurement
+  * This value was derived by taking the mean of "fBodyBodyGyroMag-std()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Jerk.Magnitude.Mean \[numeric\]:
+  * The mean of the frequency domain body gyroscope jerk magnitude mean measurement
+  * This value was derived by taking the mean of "fBodyBodyGyroJerkMag-mean()" for each combination of test subject and activity type
+* Frequency.Domain.Body.Gyroscope.Jerk.Magnitude.Standard.Deviation \[numeric\]:
+  * The mean of the frequency domain body gyroscope jerk magnitude standard deviation measurement
+  * This value was derived by taking the mean of "fBodyBodyGyroJerkMag-std()" for each combination of test subject and activity type
