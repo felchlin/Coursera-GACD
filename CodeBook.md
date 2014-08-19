@@ -59,7 +59,7 @@ As tidy data (and this course) emphasizes making variable names as readable and 
 as possible, I chose to make the names as explicit and spelled-out as possible, with the
 consequence that they became very long. For further readability, I capitalized the first letter
 of each word, and separated the words by '.' characters. For 'x', 'y', and 'z'-axis variables,
-I added the ".axis" suffix to make the name more explicity. I also expanded appreviations (e.g.
+I added the ".axis" suffix to make the name more explicit. I also expanded appreviations (e.g.
 ("acc" to "Accelerometer") to eliminate ambiguity as mich as possible. Raw data variables
 beginning with "t" denote time domain measurements. Likewise, raw data variables beginning
 with "f" denote frequency domain measurements. To make these easy to interpret I expanded these
