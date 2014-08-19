@@ -41,18 +41,6 @@ install <- function(baseDir, subDir, fileUrl, topZipSubdir) {
     topUnzippedDir
 }
 
-# Construct a data set name (returns a string)
-dsName <- function(type, dim, set) {
-    nameStr <- paste(type, dim, set, sep="_")
-    nameStr
-}
-
-# Construct the relative path to a data input file (returns a string)
-fPath <- function(dir, type, dim, set) {
-    dsNameStr <- dsName(type, dim, set)
-    relFilePath <- paste(dir, "/", dsNameStr, ".txt", sep="")
-    relFilePath
-}
 
 ##################################################################################
 # Transform a vector of original feature names into human-readable (long) form
@@ -318,10 +306,10 @@ run(dataDir, reportFile)
 setwd(baseDir)
 
 # As a test, read in a data frame
-tidyData <- read.table(reportFile, header=TRUE)
+#tidyData <- read.table(reportFile, header=TRUE)
 
 # Show the tidy data file to the person running this script
-file.show(reportFile, header = reportFile)
+#file.show(reportFile, header = reportFile)
 
 #browser()
 
