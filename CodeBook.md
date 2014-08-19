@@ -49,7 +49,7 @@ The string "Mean" can also be found in variables that have the prefix "angle", b
 decided to exclude those features because they are angles between other things, defined in
 features_info.txt as:
 
-  * angle(): Angle between to vectors. 
+  * angle(): Angle between two vectors
 
 
 ## Variables in the tidy data set
