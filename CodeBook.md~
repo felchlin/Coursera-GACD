@@ -7,11 +7,11 @@ Further pre-processing of these signals was performed on the raw signals to prod
 data that comprised the raw data set that is the starting point of this project. A full
 description of the raw data can be found here:
 
-  &nbsp;&nbsp;http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+  &nbsp;&nbsp;[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones]
 
 The raw data was downloaded from (per course project instructions):
 
-  &nbsp;&nbsp;https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+  &nbsp;&nbsp;[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip]
 
 
 With the above raw data as the starting put (input) for this project, no manual pre-
@@ -68,8 +68,8 @@ out to "Time.Domain" and "Frequency.Domain" respectively.
 
 ## Variable list with definitions
 * subject \[integer\]:
-  ..* The test subject (a person) number.
-  ..* It has values in the range 1-30.
+  --* The test subject (a person) number.
+  --* It has values in the range 1-30.
 * activity \[Factor with 6 levels\]:
   --* The six possible activities the test subject could be doing while the data was being sampled.
   --* The six possible values are: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
