@@ -1,6 +1,16 @@
 ###########################################################################################
 # run_analysis.R
 #
+# What this script does:
+#
+# 
+# 1. Merges the training and the test sets to create one data set.
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+# 3. Uses descriptive activity names to name the activities in the data set.
+# 4. Appropriately labels the data set with descriptive variable names. 
+# 5. Creates a second, independent tidy data set with the average of each variable for each
+#    activity and each subject. 
+#
 # Information about the raw data:
 #
 #  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
@@ -76,15 +86,34 @@ plainEnglishNames <- function(features.orig) {
     features
 }
 
+
+####################################################################################
+# Figure out ("grok") units from (processed) feature names. Features containing
+# the substring "Accelerometer" will be assumed to have "standard gravity units 'g'"
+# for units, and features containing "Gyroscope" be assumed to have "radians/second"
+# units
+#
+grokUnits <- function(features) {
+    sgu <- "normalized standard gravity units 'g'"
+    rps <- "normalized radians/second"
+    accel.l <- grepl("Accelerometer", features)
+    gyro.l <- grepl("Gyroscope", features)
+    units <- rep("unknown", length(features))
+    units[accel.l] <- sgu
+    units[gyro.l] <- rps
+    units
+}
+
+
 # Write variables' descriptions to a file
-writeVariablesFile <- function(baseDir, fileName, features, features.orig) {
+writeVariablesFile <- function(baseDir, fileName, features, features.orig, units) {
     variablesFile <- file.path(baseDir, fileName)
     if (file.exists(variablesFile)) {
         file.remove(variablesFile)
     }
     features.w.spaces <- tolower(gsub("[.]+", " ", features))
 
-    lines <- paste("* ", features, " \\[numeric\\]:\n  * The mean of the ", features.w.spaces, sep="")
+    lines <- paste("* ", features, " (", units, "), ", "\\[numeric\\]:\n  * The mean of the ", features.w.spaces, sep="")
     lines <- paste(lines, " measurement\n  *", sep="")
     lines <- paste(lines, " This value was derived by taking", sep="")
     lines <- paste(lines, " the mean of \"", features.orig, sep="")
@@ -223,8 +252,11 @@ run <- function(dataDir, reportFile) {
     # 5. Create a second, independent tidy data set with the average of each variable for each
     #    activity and each subject.
     
+    # Create a character vector to hold the units per each feature
+    units <- grokUnits(features)
+    
     # Write out a file with variables and their plain-English descriptions
-    writeVariablesFile(baseDir, "variable_desc.txt", features, features.orig)
+    writeVariablesFile(baseDir, "variable_desc.txt", features, features.orig, units)
     
     # Get the number of rows and columns in the data frame. Will be needed when
     # we pre-allocate space for our reduced data set.
@@ -237,9 +269,9 @@ run <- function(dataDir, reportFile) {
     ncols.reqd <- ncols.data + 2 # 2 extra for subject and activity
     num.NAs <- nrows.reqd * ncols.reqd
     means.m <- matrix(rep(NA, num.NAs), nrow=nrows.reqd, ncol=ncols.reqd)
-    colnames(means.m) <- c("subject", "activity", features)
+    colnames(means.m) <- c("Subject", "Activity", features)
     
-    # Populate our matrix of means. Include subject and activity columns
+    # Populate our matrix of means. Include Subject and Sctivity columns
     rowNum <- 1
     for (i in subject.indices.unique) {
         for (j in activity.indices.unique) {
@@ -277,10 +309,10 @@ run <- function(dataDir, reportFile) {
     # 3. Use descriptive activity names to name the activities in the data set.
     #
     
-    # Re-write means.df$activity as a factor variable using activities.df
+    # Re-write means.df$Activity as a factor variable using activities.df
     toCol <- 2 # 2nd column in activities.df is Factor of descriptive names
-    toSwap <- means.df$activity
-    means.df$activity <- swapColumns(toSwap, activities.df, toCol)
+    toSwap <- means.df$Activity
+    means.df$Activity <- swapColumns(toSwap, activities.df, toCol)
     
     # Finally, write out the final tidy data set
     writeReport(means.df, reportFile)
