@@ -100,10 +100,10 @@ names to have only "Body".
 
 
 ## Variable list with definitions
-* Subject (integer) \[<no units>\]:
+* Subject (integer) \[\<no units\>\]:
   * The test subject (a person) number
   * It has values in the range 1-30
-* Activity (Factor with 6 levels) \[<no units>\]:
+* Activity (Factor with 6 levels) \[\<no units\>\]:
   * The six possible activities the test subject could be doing while the data was being sampled
   * The six possible values are: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
 * Time.Domain.Body.Accelerometer.Mean.X.axis (normalized standard gravity units 'g'), \[numeric\]:
